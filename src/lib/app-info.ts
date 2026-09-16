@@ -56,8 +56,8 @@ export const DEVELOPER_TEL_URL = `tel:+${DEVELOPER.phoneInternational}`
 /** رابط بريد إلكتروني مباشر */
 export const DEVELOPER_MAIL_URL = `mailto:${DEVELOPER.email}`
 
-/** سطر حقوق الملكية المختصر (يُستخدم في أكثر من موضع) */
-export const COPYRIGHT_LINE = `جميع الحقوق محفوظة © ${COPYRIGHT_YEAR} — ${DEVELOPER.name}`
+/** سطر حقوق الملكية المختصر (يُستخدم في أكثر من موضع) — حق ثابت للمطوّر وليس لمالك السنتر */
+export const COPYRIGHT_LINE = `جميع الحقوق محفوظة للمطوّر م/ ${DEVELOPER.name} © ${COPYRIGHT_YEAR}`
 
 /** نص حظر التوزيع المختصر */
 export const LICENSE_SHORT =
