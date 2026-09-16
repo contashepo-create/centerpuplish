@@ -44,6 +44,7 @@ import {
 import { buildPublicSchedule, isSchedulePublished } from "@/lib/schedule"
 import { downloadSchedulePDF } from "@/lib/schedule-print"
 import { getTeacherName, getTeacherSignatureLine } from "@/lib/branding"
+import { COPYRIGHT_LINE } from "@/lib/app-info"
 import { formatTime12 } from "@/lib/utils"
 import { fetchPublicData } from "@/lib/supabase/sync"
 import { toPublicExamCard } from "@/lib/exam-public"
@@ -828,7 +829,7 @@ export default function HomePage() {
         <div className="border-t border-gray-200 dark:border-gray-800 py-5 space-y-3">
           <TeacherSignature compact />
           <p className="text-center text-sm text-gray-400 dark:text-gray-600">
-            {publicTeacher.name || getTeacherName()} — جميع الحقوق محفوظة © {now.getFullYear()}
+            {COPYRIGHT_LINE}
           </p>
         </div>
       </footer>
